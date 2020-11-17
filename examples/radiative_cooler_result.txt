@@ -1,0 +1,8 @@
+The optimum structure found was: 
+  material  thickness
+0     SiO2   0.241140
+1      SiN   0.133803
+2     HfO2   0.395591
+3     MgF2   0.307198
+4      SiC   0.175838
+5     MgF2   0.057326
