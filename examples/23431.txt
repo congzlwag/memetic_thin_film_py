@@ -1,0 +1,7 @@
+  material  thickness
+0      SiN   0.399010
+1     SiO2   0.320984
+2     SiO2   0.296143
+3      SiC   0.544390
+4      SiN   0.878890
+5     MgF2   0.185647

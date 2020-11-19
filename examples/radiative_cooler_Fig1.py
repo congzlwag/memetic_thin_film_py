@@ -25,7 +25,7 @@ disp_data = DispData(materials, wvlen_samples, wvlen_fine)
 
 # Target reflection spectrum input array
 # Format: array([[wvlen_min1, wvlen_max1, refl1, weight1], ...])
-r_target_input = np.array([[0.3, 1.81, 1, 5], [8, 9.3, 0, 1], [9.3, 10, 1, 3], [10, 13, 0, 1], [13, 25, 1, 1]])
+r_target_input = np.array([[0.3, 1.81, 1, 2], [8, 9.3, 0, 3], [9.3, 10, 1, 4], [10, 13, 0, 3], [13, 25, 1, 1]])
     # Reflects 0.3-1.8 and 13-25 microns. Antireflects 8-13 microns
 
 # List of the materials used
@@ -44,7 +44,7 @@ ma = MAoptim(disp_data, list_materials, material_in, material_sub, num_layers, n
 ma.generate_population() 
 
 # OPTIONAL memetic algorithm parameters
-optim_params = {'max_iter':60, 'mutation_rate':0.05}
+optim_params = {'max_iter':120, 'mutation_rate':0.05}
 ma.set_optim_params(**optim_params)
 
 #%% Perform the memetic algorithm optimization
